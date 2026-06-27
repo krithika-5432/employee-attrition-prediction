@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+const API_BASE = 'https://employee-attrition-prediction-00ps.onrender.com';
 const api = axios.create({ baseURL: API_BASE });
 
 export const uploadDataset = (file: File) => {
