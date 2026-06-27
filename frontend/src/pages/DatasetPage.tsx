@@ -50,7 +50,6 @@ function ChartRender({ chart }: any) {
 }
 
 export default function DatasetPage() {
-  const ctx = useAppContext();
   const [analytics, setAnalytics] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
