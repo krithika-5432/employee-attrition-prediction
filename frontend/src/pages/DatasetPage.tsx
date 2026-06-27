@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend, LineChart, Line, ComposedChart, Area, AreaChart } from 'recharts';
+import { motion, AnimatePresence } from 'framer-motion'; 
+import { BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, Tooltip, ResponsiveContainer, ComposedChart, Line } from 'recharts';
 import { Database, TrendingUp, Users, Layers, X, Maximize2, AlertCircle, AlertTriangle, Zap } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { getDatasetAnalytics } from '../services/api';
