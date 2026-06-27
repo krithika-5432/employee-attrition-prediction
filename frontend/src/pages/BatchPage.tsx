@@ -47,7 +47,7 @@ export default function BatchPage() {
         setError(msg);
       })
       .finally(() => setLoading(false));
-  }, [ctx.datasetUploaded]);
+    }, [ctx.datasetUploaded]);
 
   if (!ctx.datasetUploaded) return (
     <div className="min-h-screen pt-20 flex items-center justify-center">
