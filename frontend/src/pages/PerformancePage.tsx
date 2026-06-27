@@ -46,7 +46,7 @@ const rocData = [
 
 export default function PerformancePage() {
   const [perfData, setPerfData] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
 
   useEffect(() => {
     getPerformance()
