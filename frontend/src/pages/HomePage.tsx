@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { TrendingUp, ShieldCheck, BarChart2, Layers, Users, Brain, ArrowRight } from 'lucide-react';
+import { TrendingUp, ShieldCheck, BarChart2, Layers, Users, ArrowRight } from 'lucide-react';
 
 const features = [
   {
