@@ -47,7 +47,8 @@ export default function BatchPage() {
         setError(msg);
       })
       .finally(() => setLoading(false));
-    }, [ctx.datasetUploaded]);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, [ctx.datasetUploaded]);
 
   if (!ctx.datasetUploaded) return (
     <div className="min-h-screen pt-20 flex items-center justify-center">
