@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, LineChart, Line, Legend } from 'recharts';
 import { ShieldCheck, Target, Zap, AlertTriangle, TrendingUp } from 'lucide-react';
-import { ShieldCheck, Target, Zap, AlertTriangle, CheckCircle, TrendingUp } from 'lucide-react';
 import { getPerformance } from '../services/api';
 
 const customTooltipStyle = {
