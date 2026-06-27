@@ -1,6 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CloudUpload, ChevronDown, Minus, Plus, AlertTriangle, TrendingUp, Activity, DollarSign, Users, Zap, BarChart2, Shield } from 'lucide-react';
+import { CloudUpload, ChevronDown, Minus, Plus, AlertTriangle, TrendingUp, Activity, Users, Zap, BarChart2, Shield } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { uploadDataset, predict, simulate } from '../services/api';
 
