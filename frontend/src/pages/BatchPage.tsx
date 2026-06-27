@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, ComposedChart, Area, AreaChart, ScatterChart, Scatter } from 'recharts';
+import { BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { Users, AlertTriangle, CheckCircle, TrendingUp, Search, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, X, Maximize2, AlertCircle, Zap, Shield, DollarSign, TrendingDown } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { batchAnalysis } from '../services/api';
