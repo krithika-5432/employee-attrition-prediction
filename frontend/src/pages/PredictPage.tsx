@@ -425,38 +425,6 @@ function PredictionFactors({ factors }: { factors: any[] }) {
   );
 }
 
-function RetentionRecommendations({ recommendations }: { recommendations: any[] }) {
-  if (!recommendations || recommendations.length === 0) return null;
-  const cfg: any = {
-    high: { color: 'text-red-400', bg: 'bg-red-500/10 border-red-500/20', badge: 'bg-red-500/20 text-red-400', label: 'High Priority' },
-    medium: { color: 'text-amber-400', bg: 'bg-amber-500/10 border-amber-500/20', badge: 'bg-amber-500/20 text-amber-400', label: 'Medium Priority' },
-    low: { color: 'text-emerald-400', bg: 'bg-emerald-500/10 border-emerald-500/20', badge: 'bg-emerald-500/20 text-emerald-400', label: 'Low Priority' },
-  };
-  return (
-    <div className="glass p-6">
-      <h2 className="text-white font-semibold mb-1">Retention Recommendations</h2>
-      <p className="text-slate-400 text-sm mb-4">Actionable steps to reduce attrition risk for this employee.</p>
-      <div className="space-y-3">
-        {recommendations.map((r, i) => {
-          const c = cfg[r.priority] || cfg.medium;
-          return (
-            <motion.div
-              key={i} className={`rounded-xl border p-4 ${c.bg}`}
-              initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.1 }}
-            >
-              <div className="flex items-center justify-between mb-2">
-                <p className="text-white font-semibold text-sm">{safeString(r.title)}</p>
-                <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${c.badge}`}>{c.label}</span>
-              </div>
-              <p className="text-slate-400 text-sm leading-relaxed">{safeString(r.description)}</p>
-            </motion.div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
 function RetentionSimulator({ form, onSimulate, simData, recommendations }: any) {
   const [simForm, setSimForm] = useState({ ...form });
   const update = (key: string, val: any) => {
